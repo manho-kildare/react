@@ -1,26 +1,18 @@
-import AlignTest from "./pages/AlignTest";
-import CardContainer from "./pages/CardContainer";
-import DirectionTest from "./pages/DirectionTest";
-import JustifyCenterTest from "./pages/JustifyCenterTest";
-import MinMaxTest from "./pages/MinMaxTest";
+import ButtonTest from "./pages/ButtonTest";
+import InputTest from "./pages/InputTest";
+import ModalTest from "./pages/ModalTest";
 
-import UserContainer from "./pages/UserContainer";
-import WrapTest from "./pages/WrapTest";
 
 
 
 
 function App() {
   return (
-    <>
-      <CardContainer />
-      <UserContainer />
-      <AlignTest />
-      <JustifyCenterTest />
-      <MinMaxTest />
-      <WrapTest />
-      <DirectionTest />
-    </>
+    <main>
+      <ButtonTest />
+      <InputTest />
+      <ModalTest />
+    </main>
   );
 }
 

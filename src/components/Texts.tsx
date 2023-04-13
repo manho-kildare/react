@@ -14,7 +14,7 @@ export const Title: FC<TitleProps> = ({className: _className, numberOfLines, ...
     _className,
     numberOfLines
   )
-  console.log(props);
+  
   return <p {...props} className={className} />
 }
 

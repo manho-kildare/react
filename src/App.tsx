@@ -1,25 +1,34 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import AvatarTest from "./pages/AvatarTest";
+import BackgroundImageTest from "./pages/BackgroundImageTest";
+import DisplayNoneTest from "./pages/DisplayNoneTest";
+import DisplayTest from "./pages/DisplayTest";
+import DivTest from "./pages/DivTest";
+import HeightTest from "./pages/HeightTest";
+import ImageTest from "./pages/ImageTest";
+import MarginTest from "./pages/MarginTest";
+import OverlayTest from "./pages/OverlayTest";
+import PaddingTest from "./pages/PaddingTest";
+import PositionTest from "./pages/PositionTest";
+import ViewprotTest from "./pages/ViewprotTest";
+
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <OverlayTest />
+      {/* <PositionTest /> */}
+      {/* <DisplayNoneTest />
+      <DisplayTest />
+      <AvatarTest />
+      <BackgroundImageTest />
+      <ImageTest />
+      <MarginTest />
+      <PaddingTest />
+      <HeightTest />
+      <ViewprotTest /> */}
+      {/* <DivTest /> */}
+    </>
   );
 }
 

@@ -1,19 +1,12 @@
-import ButtonTest from "./pages/ButtonTest";
-import InputTest from "./pages/InputTest";
-import ModalTest from "./pages/ModalTest";
-
-
-
+import { useEffect,  useState } from "react";
+import { useClock } from "./hooks";
+import Clock from "./pages/Clock";
 
 
 function App() {
-  return (
-    <main>
-      <ButtonTest />
-      <InputTest />
-      <ModalTest />
-    </main>
-  );
+  const today = useClock();
+  
+  return <Clock today={today} />;
 }
 
 export default App;

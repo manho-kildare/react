@@ -13,7 +13,7 @@ export type IconProps = ButtonProps &
 export const Icon = ({name, iconClassName, className, ...buttonProps}: IconProps) => {
   const btnClassName = ['btn-circle', className].join(" ");
   return (
-    <Button {...buttonProps}>
+    <Button {...buttonProps} className={btnClassName}>
       <CIcon name={name}  className={iconClassName} />
     </Button>
   )

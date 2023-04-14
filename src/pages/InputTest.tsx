@@ -16,7 +16,7 @@ export default function InputTest() {
     // console.log(e.target.checked);
     setChecked(notUsed => e.target.checked);
   },[])
-  console.log("zzz");
+  
   return (
     <section className="mt-4">
       <Title>InputTest</Title>

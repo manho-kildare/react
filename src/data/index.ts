@@ -4,5 +4,6 @@ export * from './chance';
 export * from './date';
 export * from './User';
 export * from './Card';
+export * from './fetchRandomUser';
 
 

@@ -3,7 +3,7 @@ import FileDrop from "./pages/FileDrop";
 import ForwardRefTest from "./pages/ForwardRefTest";
 import InputFocusTest from "./pages/InputFocusTest";
 import InputValueTest from "./pages/InputValueTest";
-import ValidateableInput from "./pages/ValidateableInput";
+import ValidateableInput from "./pages/ValidateableInputTest";
 
 
 

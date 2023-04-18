@@ -1,5 +1,16 @@
-import React from "react";
+import React, { useRef } from "react";
+import { Title } from "../components";
 
 export default function InputFocusTest() {
-  return <div>InputFocusTest</div>;
+  const inputRef = useRef<HTMLInputElement>(null);
+
+  
+  return (
+    <section className="mt-4">
+      <Title>InputFocusTest</Title>
+      <div className="flex justify-center mt-4">
+        <input ref={inputRef} placeholder="enter some text" className="input input-primary" />
+      </div>
+    </section>
+  );
 }

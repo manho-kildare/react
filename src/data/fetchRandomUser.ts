@@ -15,8 +15,9 @@ export const fetchRandomUser = (): Promise<IRandomUser> =>
     fetch("https://randomuser.me/api/")
       .then(res => res.json())
       .then((data: unknown) => {
-        console.log(data) // convertRandomUse를 구현하고 할 때 사용한다.
+        
         const {results} = data as {results: IRandomUser[]};
+        
         resolve(convertRandomUser(results[0]));
       })
       .catch(reject)

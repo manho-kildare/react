@@ -1,23 +1,23 @@
-import ClickTest from "./pages/ClickTest";
-import FileDrop from "./pages/FileDrop";
-import ForwardRefTest from "./pages/ForwardRefTest";
-import InputFocusTest from "./pages/InputFocusTest";
-import InputValueTest from "./pages/InputValueTest";
-import ValidateableInput from "./pages/ValidateableInputTest";
 
 
+import {Provider as ReduxProvider} from 'react-redux'
+import ErrorMessageTest from './pages/ErrorMessageTest';
+import FetchTest from './pages/FetchTest';
+import LoadingTest from './pages/LoadingTest';
+import LoggerTest from './pages/LoggerTest';
+
+import { useStore } from "./store";
 
 
 function App() {
+  const store = useStore();
   return (
-    <main>
-      <ValidateableInput />
-      <ForwardRefTest />
-      <InputValueTest />
-      <InputFocusTest />
-      <FileDrop />
-      <ClickTest />
-    </main>
+    <ReduxProvider store={store}>
+      <FetchTest />
+      <ErrorMessageTest />
+      <LoadingTest />
+      <LoggerTest />
+    </ReduxProvider>
   );
 }
 
